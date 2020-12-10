@@ -1,64 +1,70 @@
-import React, { useState, useEffect } from "react";
+import React, {useState} from 'react'
+// import { Prompt } from "react-router-dom";
 import CourseForm from "./CourseForm";
 import * as courseApi from "../api/courseApi";
-import { toast } from "react-toastify";
+import { toast } from 'react-toastify';
+const ManageCoursePage = (props) => {
+// debugger;
+    console.log(props, 'props')
 
-const ManageCoursePage = props => {
-    const [errors, setErrors] = useState({});
-    const [course, setCourse] = useState({
+    const [errors, setError] = useState({})
+
+        const [course, setCourseInput] = useState({
         id: null,
-        slug: "",
-        title: "",
-        authorId: null,
-        category: ""
+        slug: '',
+        authorId: '',
+        category: ''
     });
 
-    useEffect(() => {
-        const slug = props.match.params.slug; // from the path `/courses/:slug`
-        if (slug) {
-            courseApi.getCourseBySlug(slug).then(_course => setCourse(_course));
-        }
-    }, [props.match.params.slug]);
-
-    function handleChange({ target }) {
-        setCourse({
-            ...course,
-            [target.name]: target.value
-        });
-    }
-
     function formIsValid() {
-        const _errors = {};
+        const localErrors = {};
+        if(!course.title) localErrors.title = "Title is required";
+        if(!course.authorId) localErrors.authorId = "Author id is required";
+        if(!course.category) localErrors.category = "Category is required";
+        setError(localErrors);
+        return Object.keys(localErrors).length === 0;
 
-        if (!course.title) _errors.title = "Title is required";
-        if (!course.authorId) _errors.authorId = "Author ID is required";
-        if (!course.category) _errors.category = "Category is required";
-
-        setErrors(_errors);
-        // Form is valid if the errors object has no properties
-        return Object.keys(_errors).length === 0;
+    }
+    function handleChange(event) {
+        const updatedCourse = {
+            ...course,
+            [event.target.name]: event.target.value
+        };
+        setCourseInput(updatedCourse)
     }
 
-    function handleSubmit(event) {
-        event.preventDefault();
-        if (!formIsValid()) return;
+    function handleFormSubmit(event) {
+        // event.preventDefault();
+        console.log(props, 'props')
+
+        if(!formIsValid()) return;
+
         courseApi.saveCourse(course).then(() => {
+            console.log('saving');
             props.history.push("/courses");
-            toast.success("Course saved.");
+
+            const notify = () => toast("Wow so easy !");
+
+            toast.success("Course Saved!");
+            notify();
+
         });
     }
 
     return (
         <>
-            <h2>Manage Course</h2>
+            <h2> Manage Course</h2>
+            {/*<Prompt when={true} message="Are you sure you want to leave this page?"></Prompt>*/}
+            {/*{props.match.params.slug}*/}
+            <p>React is awesome!</p>
             <CourseForm
                 errors={errors}
                 course={course}
                 onChange={handleChange}
-                onSubmit={handleSubmit}
+                onSubmit={handleFormSubmit}
             />
         </>
-    );
+    )
 };
 
 export default ManageCoursePage;
