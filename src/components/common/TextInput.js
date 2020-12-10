@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 function TextInput(props) {
 let wrapperClass = 'form-group';
-if(props.error && props.error.length > 1) {
+if(props.error.length > 0) {
     wrapperClass += " has-error"
 }
     return (
