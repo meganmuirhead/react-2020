@@ -16,7 +16,6 @@ function App() {
     //     if (route === '/courses') return <CoursesPage/>;
     //     return <HomePage/>
     // }
-    const notify = () => toast("Wow so easy !");
 
 
     return (<div className='container-fluid'>
@@ -34,7 +33,6 @@ function App() {
             <Route component={NotFoundPage} />
             }
         </Switch>
-        <button onClick={notify}>Notify !</button>
 
     </div>)
 
