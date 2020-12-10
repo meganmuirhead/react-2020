@@ -7,6 +7,8 @@ import { Route, Switch, Redirect } from "react-router-dom"
 import NotFoundPage from "./NotFoundPage";
 import ManageCoursePage from "./ManageCoursePage";
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 function App() {
     // function getPage() {
     //     const route = window.location.pathname;
@@ -14,10 +16,15 @@ function App() {
     //     if (route === '/courses') return <CoursesPage/>;
     //     return <HomePage/>
     // }
+    const notify = () => toast("Wow so easy !");
+
 
     return (<div className='container-fluid'>
+        <ToastContainer />
+
         <Header/>
         <Switch>
+
             <Route path='/' exact component={HomePage} />
             <Route path='/courses' component={CoursesPage} />
             <Route path='/about' component={AboutPage} />
@@ -27,6 +34,7 @@ function App() {
             <Route component={NotFoundPage} />
             }
         </Switch>
+        <button onClick={notify}>Notify !</button>
 
     </div>)
 

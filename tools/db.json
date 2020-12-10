@@ -1,1 +1,176 @@
-{"courses":[{"id":1,"title":"Securing React Apps with Auth","slug":"react-auth0-authentication-security","authorId":1,"category":"Human"},{"id":2,"title":"React: The Big Picture","slug":"react-big-picture","authorId":1,"category":"Mammal"},{"id":3,"title":"Creating Reusable React Components","slug":"react-creating-reusable-components","authorId":1,"category":"JavaScript"},{"id":4,"title":"Building a JavaScript Development Environment","slug":"javascript-development-environment","authorId":1,"category":"JavaScript"},{"id":5,"title":"Building Applications with React and Redux","slug":"react-redux-react-router-es6","authorId":1,"category":"JavaScript"},{"id":6,"title":"Building Applications in React and Flux","slug":"react-flux-building-applications","authorId":1,"category":"JavaScript"},{"id":7,"title":"Clean Code: Writing Code for Humans","slug":"writing-clean-code-humans","authorId":1,"category":"Software Practices"},{"id":8,"title":"Architecting Applications for the Real World","slug":"architecting-applications-dotnet","authorId":1,"category":"Software Architecture"},{"id":9,"title":"Becoming an Outlier: Reprogramming the Developer Mind","slug":"career-reboot-for-developer-mind","authorId":1,"category":"Career"},{"id":10,"title":"Web Component Fundamentals","slug":"web-components-shadow-dom","authorId":1,"category":"HTML5"}],"authors":[{"id":1,"name":"Cory House"},{"id":2,"name":"Scott Allen"},{"id":3,"name":"Dan Wahlin"}]}
+{
+  "courses": [
+    {
+      "id": 1,
+      "title": "Securing React Apps with Auth",
+      "slug": "react-auth0-authentication-security",
+      "authorId": 1,
+      "category": "Human"
+    },
+    {
+      "id": 2,
+      "title": "React: The Big Picture",
+      "slug": "react-big-picture",
+      "authorId": 1,
+      "category": "Mammal"
+    },
+    {
+      "id": 3,
+      "title": "Creating Reusable React Components",
+      "slug": "react-creating-reusable-components",
+      "authorId": 1,
+      "category": "JavaScript"
+    },
+    {
+      "id": 4,
+      "title": "Building a JavaScript Development Environment",
+      "slug": "javascript-development-environment",
+      "authorId": 1,
+      "category": "JavaScript"
+    },
+    {
+      "id": 5,
+      "title": "Building Applications with React and Redux",
+      "slug": "react-redux-react-router-es6",
+      "authorId": 1,
+      "category": "JavaScript"
+    },
+    {
+      "id": 6,
+      "title": "Building Applications in React and Flux",
+      "slug": "react-flux-building-applications",
+      "authorId": 1,
+      "category": "JavaScript"
+    },
+    {
+      "id": 7,
+      "title": "Clean Code: Writing Code for Humans",
+      "slug": "writing-clean-code-humans",
+      "authorId": 1,
+      "category": "Software Practices"
+    },
+    {
+      "id": 8,
+      "title": "Architecting Applications for the Real World",
+      "slug": "architecting-applications-dotnet",
+      "authorId": 1,
+      "category": "Software Architecture"
+    },
+    {
+      "id": 9,
+      "title": "Becoming an Outlier: Reprogramming the Developer Mind",
+      "slug": "career-reboot-for-developer-mind",
+      "authorId": 1,
+      "category": "Career"
+    },
+    {
+      "id": 10,
+      "title": "Web Component Fundamentals",
+      "slug": "web-components-shadow-dom",
+      "authorId": 1,
+      "category": "HTML5"
+    },
+    {
+      "id": 11,
+      "slug": "efa",
+      "authorId": 2,
+      "category": "eaf",
+      "title": "efa",
+      "createdAt": 1607576441031
+    },
+    {
+      "id": 12,
+      "slug": "dakine-bags",
+      "authorId": 1,
+      "category": "JS",
+      "title": "dakine bags",
+      "createdAt": 1607576502101
+    },
+    {
+      "id": 13,
+      "slug": "dakine-bags",
+      "authorId": 2,
+      "category": "JS",
+      "title": "dakine bags",
+      "createdAt": 1607576508769
+    },
+    {
+      "id": 14,
+      "slug": "vhs-tot",
+      "authorId": 2,
+      "category": "daffaefaf",
+      "title": "VHS tot",
+      "createdAt": 1607576537710
+    },
+    {
+      "id": 15,
+      "slug": "dakine-bags",
+      "authorId": 2,
+      "category": "JS",
+      "title": "dakine bags",
+      "createdAt": 1607577426009
+    },
+    {
+      "id": 16,
+      "slug": "dakine-bags",
+      "authorId": 2,
+      "category": "JS",
+      "title": "dakine bags",
+      "createdAt": 1607577467485
+    },
+    {
+      "id": 17,
+      "slug": "dakine-bags",
+      "authorId": 1,
+      "category": "JS",
+      "title": "dakine bags",
+      "createdAt": 1607577517315
+    },
+    {
+      "id": 18,
+      "slug": "vhs-tot",
+      "authorId": 2,
+      "category": "ribtb",
+      "title": "VHS tot",
+      "createdAt": 1607577534058
+    },
+    {
+      "id": 19,
+      "slug": "dakine-bags",
+      "authorId": 2,
+      "category": "JS",
+      "title": "dakine bags",
+      "createdAt": 1607577716783
+    },
+    {
+      "id": 20,
+      "slug": "dakine-bags",
+      "authorId": 2,
+      "category": "JS",
+      "title": "dakine bags",
+      "createdAt": 1607577851979
+    },
+    {
+      "id": 21,
+      "slug": "dakine-bags",
+      "title": "dakine bags",
+      "authorId": 1,
+      "category": "JS",
+      "createdAt": 1607580245533
+    }
+  ],
+  "authors": [
+    {
+      "id": 1,
+      "name": "Cory House"
+    },
+    {
+      "id": 2,
+      "name": "Scott Allen"
+    },
+    {
+      "id": 3,
+      "name": "Dan Wahlin"
+    }
+  ]
+}

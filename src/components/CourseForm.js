@@ -4,13 +4,14 @@ import TextInput from "./common/TextInput";
 function CourseForm(props) {
 
     return (
-        <form>
+        <form onSubmit={props.onSubmit}>
             <TextInput
-                    id="title"
-                    label="Title"
-                    onChange={props.onChange}
-                    name="title"
-                    value={props.course.title}
+                id="title"
+                label="Title"
+                onChange={props.onChange}
+                name="title"
+                value={props.course.title}
+                error={props.errors.title}
             />
 
             <div className="form-group">
@@ -28,19 +29,24 @@ function CourseForm(props) {
                         <option value="2">Scott Allen</option>
                     </select>
                 </div>
+                {props.errors.authorId && (
+                    <div className="alert-danger alert">{props.errors.authorId}</div>
+                )}
             </div>
 
 
-                    <TextInput
-                        id="category"
-                        label="Category"
-                        name="category"
-                        onChange={props.onChange}
-                        value={props.course.category}
-                    />
+            <TextInput
+                id="category"
+                label="Category"
+                name="category"
+                onChange={props.onChange}
+                value={props.course.category}
+                error={props.errors.category}
+
+            />
 
 
-            <input type="submit" value="Save" className="btn btn-primary"/>
+            <input type="submit" value="Save" className="btn btn-primary" />
         </form>
     );
 }
