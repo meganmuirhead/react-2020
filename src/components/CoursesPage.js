@@ -10,7 +10,8 @@ function CoursesPage() {
         getCourses().then(_courses => setCourses(_courses));
     }, [])
 
-
+    // courses is smart comp
+    // courselist is dumb :)
     return (
         <>
             <h2>Courses</h2>
