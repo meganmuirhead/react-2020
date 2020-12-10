@@ -27,18 +27,20 @@ function CourseList(props) {
         </table>
     )
 
+
+
+}
 //adding property to function to validate props being passed in
 //typing the shape of array
-
-    CourseList.propTypes = {
-        courses: PropTypes.arrayOf(PropTypes.shape({
+CourseList.propTypes = {
+    courses: PropTypes.arrayOf(
+        PropTypes.shape({
             id: PropTypes.number.isRequired,
             title: PropTypes.string.isRequired,
             authorId: PropTypes.number.isRequired,
             category: PropTypes.string.isRequired
-        })).isRequired
-    };
-}
-
+        })
+    ).isRequired
+};
 
 export default CourseList;

@@ -12,8 +12,11 @@ const ManageCoursePage = (props) => {
         category: ''
     });
 
-    function handleTitleChange(e) {
-        const updatedCourse = {...courseInput, title: e.target.value}
+    function handleChange(event) {
+        const updatedCourse = {
+            ...courseInput,
+            [event.target.name]: event.target.value
+        };
         setCourseInput(updatedCourse)
     }
     return (
@@ -22,7 +25,7 @@ const ManageCoursePage = (props) => {
             {/*<Prompt when={true} message="Are you sure you want to leave this page?"></Prompt>*/}
             {/*{props.match.params.slug}*/}
             <p>React is awesome!</p>
-            <CourseForm course={courseInput} onTitleChange={handleTitleChange}/>
+            <CourseForm course={courseInput} onChange={handleChange}/>
         </>
     )
 };
